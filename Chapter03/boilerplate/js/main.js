@@ -4,7 +4,7 @@
 function initialize(){	// runs initialize function
 	cities();
 	loadData();
-	debugAjax();
+//	debugAjax();
 };
 
 // create table
@@ -138,7 +138,7 @@ function loadData(){
 			console.log(cities);
 		})
 }
-
+/*
 function debugAjax(){
 	// declare myData
 	var myData;
@@ -149,6 +149,7 @@ function debugAjax(){
 		})
 		.then(debugCallback) // pulls data into callback function
 };
+*/
 // define callback function : function calls another function
 function debugCallback(myData){
 	document.querySelector("#mydiv").insertAdjacentHTML('beforeend',"GeoJSON data: " + JSON.stringify(myData));
